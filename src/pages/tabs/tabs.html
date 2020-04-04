@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>
+      WhatsApp
+    </ion-title>
+
+    <ion-buttons start>
+      <button ion-button block (click)="goTosearchPage()" class="spacing">
+        <ion-icon name="search"></ion-icon>
+      </button>
+      <button ion-button (click)="presentPopover($event)">
+        <ion-icon name="md-more" style=font-size:20px;></ion-icon>
+      </button>
+    </ion-buttons>
+      </ion-toolbar>
+
+  <!-- <ion-toolbar color="secondary"> 
+    <ion-row> 
+     <ion-col>
+      <button ion-button icon-start clear small block>
+        <ion-icon ios="ios-camera" md="md-camera" style="color: azure;padding: left 0.00005px;"></ion-icon>
+      </button>
+    </ion-col> 
+
+      <ion-col>
+      <button ion-button icon-start clear small block>
+        <div style="text-align:right;padding: 2px;color: azure">CHATS</div>
+      </button>
+    </ion-col>
+
+    <ion-col>
+      <button ion-button icon-end clear small block>
+        <div style="color: azure;padding:4px;">STATUS</div>
+      </button>
+    </ion-col>
+
+    <ion-col>
+      <button ion-button icon-end clear small block>
+        <div style="color: azure; padding:10px;">CALLS</div>
+      </button> 
+      
+    </ion-col> 
+    </ion-row>
+ </ion-toolbar>    -->
+
+  </ion-header>
+
+<ion-content>
+    <div>
+        <ion-tabs>
+         <ion-tab [root]="chatPage" tabTitle="CHATS" ></ion-tab>
+             <ion-tab [root]="statusPage" tabTitle="STATUS" ></ion-tab>
+                  <ion-tab [root]="callsPage" tabTitle="CALLS" ></ion-tab>
+                  </ion-tabs>
+     </div>
+</ion-content>

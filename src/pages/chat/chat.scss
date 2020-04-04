@@ -1,0 +1,39 @@
+page-chat {
+
+}
+.spacing
+{margin-right: 10px;
+ //color:black;
+ font-size: 21px;
+}
+$colors: (
+  primary:    #8B4789,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  color1: #15c178,
+  color2: #8B4789,
+  color3 : #034927,
+  color4: #673665,
+  brown: #B75E33,
+  ycBlue: #638AF1
+);
+
+
+ion-card-content{
+  margin-left:-2%;
+}
+ion-item{
+  width:0.05%;
+}
+// ion-card{
+//   display: flex;
+//   flex-direction: column;
+//   width:100% !important;
+//   margin: 0 !important;
+// }
+super-tabs  {
+  height:  calc(100% - 56px) !important;
+  top: 56px !important;
+  }

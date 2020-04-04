@@ -1,0 +1,33 @@
+
+<ion-header>
+ 
+  <ion-navbar>
+    <ion-buttons>
+      <div>
+        <ion-buttons style="float:left;">
+          <button ion-button (click)="dismiss()">
+            <ion-icon name="arrow-round-back"></ion-icon>
+            </button>
+        </ion-buttons>
+     </div>
+  </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button block (click)="presentPopover($event)" style="font-size: 20px;">
+        <ion-icon name="md-more" style=font-size:22px; (click)="presentPopover($event)"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons start>
+      <button ion-button block style="font-size: 18px;">
+          <ion-icon ios="ios-search" md="md-search"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content padding>
+
+</ion-content>

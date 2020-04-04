@@ -1,0 +1,60 @@
+page-messages {
+    .item-inner {
+        border-bottom:none !important;
+        border-top: none !important;
+    }
+}
+.circle-pic{
+    width:25px;
+    height:25px;
+    -webkit-border-radius: 30%;
+    border-radius: 330%;
+ }
+// ion-card{
+//     display: flex;
+//     flex-direction: column;
+//     width: 0.000000009%;
+
+//   }
+
+  ion-card-content{
+    margin-left:-2%;
+  }
+  ion-item{
+    width:0.00000009%;
+  }
+//   ion-card{
+//     display: flex;
+//     flex-direction: column;
+//     width: 50% !important;
+//     margin: 0 !important;
+//   }
+  .msg_received{
+    display: flex;
+    flex-direction: column;
+    width:100% !important;
+    margin: 0 !important;
+    background-color: rgb(211, 204, 195);
+  
+  }
+  
+  .msg_sent{
+    display: flex;
+    flex-direction:column;
+    width:100% !important;
+    margin: 0 !important;
+    background-color: rgb(136, 223, 136);
+
+  }
+
+.length
+{
+  display: flex;
+  flex-direction: column;
+  width:100% !important;
+  margin: 0 !important;
+  background-color: rgb(211, 204, 195);
+}
+
+  .image
+  {background-image:"https://placeimg.com/640/480/people" }

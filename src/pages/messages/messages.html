@@ -1,0 +1,109 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons>
+            <div>
+                <ion-buttons style="float:left;">
+                    <button ion-button (click)="dismiss()">
+                        <ion-icon name="arrow-round-back"></ion-icon>
+
+                        <!-- <span ion-text color="primary" showWhen="ios"></span>
+                      <ion-icon name="md-close" showWhen="android,windows"></ion-icon> -->
+                    </button>
+                </ion-buttons>
+                <ion-avatar style="float:left;">
+                    <img [src]="chat.img" class="circle-pic">
+                </ion-avatar>
+                <p style="vertical-align: middle;">{{chat.userName}}</p>
+
+
+            </div>
+        </ion-buttons>
+
+        <ion-buttons end>
+            <button ion-button block (click)="presentPopover($event)" style="font-size: 20px;">
+                <ion-icon name="md-more" style=font-size:22px; (click)="presentPopover($event)"></ion-icon>
+            </button>
+        </ion-buttons>
+
+        <ion-buttons start>
+            <button ion-button block style="font-size: 18px;">
+                <ion-icon name="videocam"></ion-icon>
+            </button>
+        </ion-buttons>
+
+        <ion-buttons start>
+            <button ion-button block style="font-size: 18px;">
+                <ion-icon ios="ios-call" md="md-call"></ion-icon>
+            </button>
+        </ion-buttons>
+
+
+    </ion-navbar>
+
+    <!----img class="circle-pic"src="https://placeimg.com/640/480/people"/>A
+    
+  
+      <ion-buttons end >
+        <button ion-button block  class="spacing">
+          <ion-icon name="videocam"></ion-icon>
+        </button>
+      </ion-buttons>
+        <ion-buttons end>
+        <button ion-button block  class="spacing">
+            <ion-icon ios="ios-call" md="md-call"></ion-icon>
+          </button>
+      </ion-buttons-->
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>
+        <div *ngFor="let m of messages ">
+
+            <ion-item *ngIf="m.isReceived" style="width:100%">
+                <div style="float:left;">
+                    <ion-card class="msg_received">
+                        <ion-card-content>{{m.messageText}}<br></ion-card-content>
+                    </ion-card>
+
+                </div>
+            </ion-item>
+            <ion-item *ngIf="!m.isReceived">
+                <div style="float:right;">
+                    <ion-card class="msg_sent">
+                        <ion-card-content>{{m.messageText}}<br></ion-card-content>
+                    </ion-card>
+                </div>
+            </ion-item>
+        </div>
+    </ion-list>
+    <ion-list>
+
+        <ion-item></ion-item>
+        <ion-item></ion-item>
+
+    </ion-list>
+    <!----label class = "item item-input">
+        <input type = "text" placeholder = "Input 1">
+     </label>
+          <button class = "button button-block hide-on-keyboard-open">
+        button
+     </button-->
+</ion-content>
+<!-- <ion-footer>
+  <ion-icon ios="ios-camera" md="md-camera" ></ion-icon>
+ <ion-input placeholder="Type a message"></ion-input>
+</ion-footer> -->
+
+<ion-footer>
+    <!-- <ion-input type="text" placeholder="Text Message"> <ion-icon ios="ios-camera" md="md-camera" ></ion-icon></ion-input> -->
+    <div style="width:90%">
+        <ion-item>
+            <ion-input type="text message" placeholder="Text Message"></ion-input>
+            <ion-icon item-end ios="ios-camera" md="md-camera"></ion-icon>
+            <ion-icon item-end ios="ios-attach" md="md-attach"></ion-icon>
+            <ion-icon item-end ios="ios-mic" md="md-mic"></ion-icon>
+        </ion-item>
+    </div>
+
+</ion-footer>
